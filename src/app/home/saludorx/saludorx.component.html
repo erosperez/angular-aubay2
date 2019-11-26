@@ -1,0 +1,11 @@
+<h1>Saludo RX</h1>
+<div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input [formControl]="fcNombre" type="text" class="form-control" name="nombre" id="nombre" placeholder="Dime tu nombre">
+      </div>
+      <button (click)="onClickBorrar($event)" type="button" class="btn btn-primary">Borrar</button>
+      <div class="mt-3">
+          <p>Hola {{fcNombre.value}}</p>
+      </div>
+      
+      

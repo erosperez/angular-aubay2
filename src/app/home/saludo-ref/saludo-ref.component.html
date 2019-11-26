@@ -1,0 +1,11 @@
+<h1>Saludo Ref</h1>
+<div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input  type="text" class="form-control" name="nombre" id="nombre" placeholder="Dime tu nombre" #refNombre>
+      </div>
+      <button (click)="refNombre.value = ''" type="button" class="btn btn-primary">Borrar</button>
+      <div class="mt-3">
+          <p>Hola {{refNombre.value}}</p>
+      </div>
+      
+      
