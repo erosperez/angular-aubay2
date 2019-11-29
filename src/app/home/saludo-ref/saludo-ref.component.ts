@@ -6,14 +6,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./saludo-ref.component.css']
 })
 export class SaludoRefComponent implements OnInit {
-
-  @ViewChild('refNombre', {static:true})
-  nodoNombre:ElementRef;
-
+  @ViewChild('refNombre', {static: true}) nodoNombre: ElementRef;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.nodoNombre.nativeElement);
+    console.log(this.nodoNombre.nativeElement)
   }
 
 }

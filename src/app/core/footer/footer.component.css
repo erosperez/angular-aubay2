@@ -1,13 +1,7 @@
-:host {
-    display: block;
-    background-color: brown;
-    color:bisque;
-}
-
-footer{
+footer {
     padding: 1rem;
 }
 
-address, p{
+address, p {
     margin: 0rem;
 }

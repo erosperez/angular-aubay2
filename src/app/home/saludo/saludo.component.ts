@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'aub-saludo',
@@ -6,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saludo.component.css']
 })
 export class SaludoComponent implements OnInit {
-  nombre:string;
-  mensaje:string;
+  nombre: string;
+  mensaje: string;
   constructor() { }
 
   ngOnInit() {
-    this.mensaje='Aquí va tu nombre'
+    this.mensaje = 'Aqui va tu nombre'
   }
 
-  onClickBorrar(event:Event){
-    this.nombre='';
- 
+  onClickBorrar(ev: Event) {
+    console.log(ev)
+    this.nombre = ''
   }
 
 }
